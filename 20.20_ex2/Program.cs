@@ -50,10 +50,7 @@ namespace _20._20_ex2
 			Func<char, int, int, string> revisoscelesTri = (symbol, row, maxRow)
 				=> new string(' ', row - 1) + new string(symbol, 2 * (maxRow - row) + 1);
 			tri.GetResult(triSymbol, triHeight, revisoscelesTri);
-
 		}
-
-
 	}
 
 	public class TriangleBuilder
@@ -70,11 +67,9 @@ namespace _20._20_ex2
 			for (int row=1; row<=maxRow; row++)
 			{
 				Console.WriteLine(func(symbol, row, maxRow));
-
 			}
 			Console.WriteLine(""); // 留空白
 		}
 	}
-	//
 	
 }
